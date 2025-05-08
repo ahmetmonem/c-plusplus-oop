@@ -31,7 +31,6 @@ AForm	*Intern::makeForm(const std::string form_to_create, const std::string targ
 {
 	AForm *(*all_forms[])(const std::string target) = {&makePresident, &makeRobot, &makeShrubbery};
 	std::string forms[] = {"PresidentialPardonForm", "RobotomyRequestForm", "ShrubberyCreationForm"};
-
 	for (int i = 0; i < 3; i++)
 	{
 		if (form_to_create == forms[i])
